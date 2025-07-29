@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>@FredCode-Countries-app</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav-bar">
+        <h1 class="title">Where in the world?</h1>
+        <div class="theme-toggler"><i class="fas fa-moon"></i> Dark Mode</div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="countries-options">
+        <div class="search-container">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for a country..."
+          />
+        </div>
+        <div class="filter-container">
+          <select title="Filter" name="region-filter" class="region-filter">
+            <option value="">Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="countries-container"></div>
+
+      <div id="loader" class="loader-container">
+        <div class="spinner"></div>
+      </div>
+    </main>
+
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
